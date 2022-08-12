@@ -19,3 +19,37 @@ https://youtu.be/mLiqK0H1wOs
 * 投稿、投稿の閲覧、投稿の削除
 * いいね機能
 * 他ユーザーとのチャット機能
+
+##テーブル
+|users|
+|----------|
+|id|
+|unique_id|
+|username|
+|email|
+|password|
+|img|
+
+|posts|
+|--------|
+|id|
+|user_id|
+|content|
+|created_day|
+
+|favorites|
+|---------|
+|id|
+|user_id|
+|post_id|
+
+|messages|
+|---------|
+|msg_id|
+|from_id|
+|to_id|
+|msg|
+
+##さいごに
+メッセージ機能については下記の動画を参考にさせていただきました。ありがとうございました。
+https://www.youtube.com/watch?v=VnvzxGWiK54&t=7631s
