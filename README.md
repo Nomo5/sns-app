@@ -1,8 +1,8 @@
 # メッセージ機能付き簡易SNSアプリ
 phpを使って簡易的なSNSアプリを作成しました。
 
-## 使用感
-[![紹介動画]((https://user-images.githubusercontent.com/106419953/184296320-3d2695cc-ef84-4ac7-b7f4-351b14815bc3.png))](https://youtu.be/mLiqK0H1wOs)
+## 使用感(動画URL)
+https://youtu.be/mLiqK0H1wOs
 
 ## 使用技術/動作環境
 * HTML/CSS
