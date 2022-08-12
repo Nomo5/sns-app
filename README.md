@@ -50,6 +50,6 @@ https://youtu.be/mLiqK0H1wOs
 |to_id|
 |msg|
 
-##さいごに
+## さいごに
 メッセージ機能については下記の動画を参考にさせていただきました。ありがとうございました。
 https://www.youtube.com/watch?v=VnvzxGWiK54&t=7631s
