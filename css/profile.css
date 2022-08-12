@@ -1,0 +1,265 @@
+.wrapper{
+    display: flex;
+    height: 100vh;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.mypage{
+    flex: 0.7;
+    border-right: 1px solid #333;
+}
+
+.mypage_header{
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 100;
+    border: 1px solid #50b7f5;
+    padding: 5px 20px;
+}
+
+.mypage_header h2{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.user_info{
+    background-color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    border-bottom: 10px solid rgb(121, 121, 121);
+}
+
+.user_info h4{
+    margin-left: 20px;
+}
+
+.user_info img{
+    object-fit: cover;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+}
+
+.deleteBox{
+    z-index: 120;
+    background-color: white;
+    position: absolute;
+    top: 300px;
+    left: 900px;
+    padding: 10px;
+    border-radius: 20px;
+    display: none;
+}
+
+.deleteBox h3{
+    font-size: 30px;
+    font-weight: 50;
+}
+
+.deleteBox .buttons{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.buttons button{
+    border: none;
+    border-radius: 6px;
+    padding: 10px 30px;
+    cursor: pointer;
+    font-weight: 600;
+    color: white;
+}
+
+.buttons .delete{
+    flex: 0.5;
+    background-color: rgb(253, 80, 80);
+    margin-right: 5px;
+}
+
+.buttons .delete:hover{
+    background-color: rgb(248, 169, 169);
+}
+
+.buttons .cancel{
+    flex: 0.5;
+    background-color: rgb(110, 107, 107);
+    margin-left: 5px;
+}
+
+.buttons .cancel:hover{
+    background-color: rgb(184, 180, 180);
+}
+
+#tab1:checked~.panels #area1{
+    display: block;
+    background-color: #fff;
+}
+
+#tab1:checked~.tab_lab1{
+    background-color: #e8f5fe;
+    color: #242424;
+}
+
+#tab2:checked~.panels #area2{
+    display: block;
+    background-color: #fff;
+}
+
+#tab2:checked~.tab_lab2{
+    background-color: #e8f5fe;
+    color: #242424;
+}
+
+.panel{
+    padding: 50px;
+    display: none;
+}
+
+input[name="check"]{
+    display: none;
+}
+
+.mypage{
+    overflow-y: scroll;
+}
+
+.mypage::-webkit-scrollbar{
+    display: none;
+}
+
+.post{
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 1px solid #e8f5fe;
+    padding: 5px;
+}
+
+.post_body{
+    flex: 1;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+}
+
+.post_avator{
+    padding: 15px;
+}
+
+.post_avator img{
+    object-fit: cover;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+
+.post_headerText h3{
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+
+.post_headerDescription{
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.post_footer{
+    display: flex;
+    justify-content: right;
+    margin-top: 10px;
+}
+
+.post_footer .heart {
+    display: flex;
+}
+
+.post_footer i{
+    color: rgb(179, 176, 176);
+    font-size: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.model {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(152, 152, 152, 0.7);
+    width: 100%;
+    height: 100%;
+    z-index: 110;
+}
+
+.post_cardBox {
+    display: none;
+    z-index: 120;
+    background-color: white;
+    width: 600px;
+    height: 250px;
+    position: absolute;
+    left: 580px;
+    top: 30px;
+    border-radius: 30px;
+    padding: 10px 5px;
+}
+
+.post_cardBox .header{
+    width: 100%;
+}
+
+.post_cardBox .header p {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    font-size: 25px;
+    margin-left: 20px;
+    color: rgb(168, 164, 164);
+    cursor: pointer;
+}
+
+.hiddenPostBox form{
+    display: flex;
+    flex-direction: column;
+}
+
+.hiddenPostBox .postBox_input{
+    padding: 20px;
+    display: flex;
+}
+
+.hiddenPostBox .postBox_input img{
+    object-fit: cover;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+
+.hiddenPostBox .postBox_input input{
+    flex: 1;
+    font-size: 20px;
+    margin-left: 20px;
+    border: none;
+}
+
+.hiddenPostBox .postBox_postButton{
+    background-color: #ff006e;
+    color: white;
+    font-weight: 900;
+    width: 130px;
+    height: 40px;
+    border-radius: 30px;
+    margin-top: 20px;
+    margin-left: auto;
+    border: none;
+    cursor: pointer;
+}
+
+.hiddenPostBox .postBox_postButton:hover{
+    background-color: #facadf;
+}
